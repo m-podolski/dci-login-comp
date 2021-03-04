@@ -39,6 +39,7 @@ input {
     display: grid;
     grid-template-columns: 3fr 0.5fr 3fr;
     width: 70vw;
+    max-width: 50rem;
   }
 }
 
@@ -126,6 +127,22 @@ input:not([type="checkbox"]) {
   margin: 0.6rem 0;
   padding: 0.6rem;
   border-bottom: solid 3px grey;
+}
+
+input:not([type="checkbox"]):nth-of-type(1) {
+  padding: 0 0 0 2.5rem;
+  background: no-repeat url(./user.svg);
+  /* background-position: center center; */
+  /* background-attachment: fixed; */
+  /* background-size: cover; */
+}
+
+input:not([type="checkbox"]):nth-of-type(2) {
+  padding: 0 0 0 2.5rem;
+  background: no-repeat url(./lock.svg);
+  /* background-position: center center; */
+  /* background-attachment: fixed; */
+  /* background-size: cover; */
 }
 
 fieldset {
