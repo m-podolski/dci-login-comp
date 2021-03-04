@@ -1,16 +1,16 @@
-# [DCI Assignment] iPhone Landing Page
+# [DCI Assignment] Login Component
 
-This project is a demonstration of basic HTML and CSS techniques.
+This project is a demonstration of HTML and CSS techniques.
 
 ## Task
-**Create a landing page for the new iPhone after the provided screenshot.**
-
-Note: The font is deviating from the layout on purpose to avoid using Arial.
+**Create a login form after an existing design. Be as precise with positioning as possible. Use Font-Awesome for the icons.**
 
 ## Topics
-- selectors
+- CSS selectors
 - layout
 - positioning
 - responsiveness
+- use of dependencies
 
 ![Screenshot](screenshot.png)
+![Screenshot2](screenshot2.png)
