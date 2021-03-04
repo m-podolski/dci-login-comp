@@ -14,7 +14,12 @@ body {
   font-family: "Fira Sans", sans-serif;
   font-weight: 400;
   color: darkgrey;
-  height: 100%;
+}
+
+@media screen and (min-width: 50em) {
+  body {
+    height: 100%;
+  }
 }
 
 button,
@@ -25,11 +30,16 @@ input {
 }
 
 .comp-container {
-  display: grid;
-  grid-template-columns: 3fr 0.5fr 3fr;
-  width: 60vw;
-  margin: auto;
+  margin: 5vmin auto;
   background: white;
+}
+
+@media screen and (min-width: 50em) {
+  .comp-container {
+    display: grid;
+    grid-template-columns: 3fr 0.5fr 3fr;
+    width: 70vw;
+  }
 }
 
 .comp-container > * {
@@ -43,7 +53,7 @@ h3,
 }
 
 h3 {
-  padding: 0 0 1rem 0;
+  padding: 1.4rem 0;
 }
 
 .buttons-container {
@@ -77,10 +87,12 @@ h3 {
 .divider-container {
   grid-column: 2/3;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
 .line {
+  align-self: center;
   position: relative;
   z-index: 1;
   width: 2px;
@@ -91,6 +103,7 @@ h3 {
 .or {
   position: relative;
   z-index: 2;
+  margin: 1rem 0;
   padding: 0.5rem;
   background: white;
   border: solid 2px lightgrey;
@@ -114,7 +127,7 @@ fieldset {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 1rem 0 0 0;
+  margin: 2rem 0;
   border: none;
 }
 
