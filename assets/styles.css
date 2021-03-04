@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  background: lightgray;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  color: darkgrey;
+  height: 100%;
+}
+
+button,
+input {
+  background: none;
+  font-family: "Fira Sans", sans-serif;
+  border: none;
+}
+
+.comp-container {
+  display: grid;
+  grid-template-columns: 3fr 0.5fr 3fr;
+  /* gap: 0.5rem; */
+  width: 60vw;
+  margin: auto;
+  background: white;
+}
+
+.comp-container > * {
+  padding: 2vw;
+}
+
+.buttons-container {
+  grid-column: 1/2;
+}
+
+.button-sm {
+  width: 100%;
+  padding: 1rem;
+  font-weight: 700;
+  color: white;
+}
+
+.button-sm:nth-child(2) {
+  margin: 1rem 0;
+}
+
+.button-fb {
+  background: rgb(76, 117, 250);
+}
+
+.button-g {
+  background: rgb(233, 70, 21);
+}
+
+.button-tw {
+  background: rgb(135, 187, 255);
+}
+
+.divider-container {
+  grid-column: 2/3;
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  position: relative;
+  z-index: 1;
+  width: 2px;
+  height: 200px;
+  background: lightgrey;
+  /* transform: scale(100%) rotate(90deg); */
+}
+
+.or {
+  position: relative;
+  z-index: 2;
+  padding: 0.5rem;
+  background: white;
+  border: solid 2px lightgrey;
+  border-radius: 99rem;
+  font-weight: 700;
+}
+
+.login-container {
+  grid-column: 3/4;
+}
+
+h3 {
+  text-align: center;
+}
+
+input:not([type="checkbox"]) {
+  width: 100%;
+  min-height: 2rem;
+  margin: 0.6rem 0;
+  padding: 0.6rem;
+  background: rgb(221, 228, 236);
+  border-bottom: solid 3px grey;
+}
+
+fieldset {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+}
+
+input[type="checkbox"] {
+  min-height: 2rem;
+  margin: auto 0;
+}
+
+label {
+  font-weight: 700;
+}
+
+.button-login {
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.2rem;
+  font-weight: 700;
+  background: rgb(113, 187, 247);
+  color: white;
+}
+
+.bottom-links {
+  grid-column: 1/4;
+  display: flex;
+  justify-content: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background: rgb(238, 237, 237);
+}
+
+.bottom-links a {
+  grid-column: 1/4;
+  display: inline-block;
+  color: rgb(0, 119, 255);
+  text-decoration: none;
+  font-weight: 700;
+  text-align: center;
+}
